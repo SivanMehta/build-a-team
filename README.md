@@ -34,7 +34,7 @@ Attempting to generate a team list for a metagame that doesn't exist:
 ```sh
 $ npm start -- --meta gen27ou --date 2027-01 --rank 2500
 
-There is no data for this metagame, please try again.
+Could not find stats for 2027-01/gen27ou-2500
 ```
 
 [1]: https://play.pokemonshowdown.com/
