@@ -5,7 +5,7 @@ import {
   populateMovesets
 } from './steps/index.js'
 
-function formatTeam(){}
+function formatTeam(team){return team}
 
 async function main(argv) {
   const args = await normalize(argv);

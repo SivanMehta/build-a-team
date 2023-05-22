@@ -10,7 +10,13 @@ export default async function populateTam({ date, meta, rank }) {
   const text = await res.text();
   
   const lines = text.split('\n');
-  const team = lines.slice(5, 11);
+  const pokemon = lines.slice(5, 11).map(line => {
+    const cols = line.split('|').map(str => str.trim());
+    return cols[2];
+  });
 
-  console.log(team.join('\n'))
+  return {
+    metagame,
+    pokemon
+  };
 }
