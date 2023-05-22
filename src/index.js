@@ -1,8 +1,10 @@
 import minimist from 'minimist';
 import normalize from './normalize.js';
+import {
+  populateTeam,
+  populateMovesets
+} from './steps/index.js'
 
-async function populateTeam(){}
-async function populateMovesets(){}
 function formatTeam(){}
 
 async function main(argv) {

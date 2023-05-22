@@ -13,15 +13,6 @@ function getMostRecentDate() {
   return `${year}-${month}`;
 }
 
-async function validateMeta(meta, rank, date) {
-  const metagame = `${date}/${meta}-${rank}`; // TODO: normalize past gens
-  const url = `https://www.smogon.com/stats/${metagame}.txt`;
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Could not find stats for given metagame`);
-  }
-}
-
 export default async function normalize(argv) {
   const {
     meta = `${CURRENT_GEN}ou`,
@@ -29,12 +20,9 @@ export default async function normalize(argv) {
     date = getMostRecentDate(),
   } = argv;
 
-  const error = await validateMeta(meta, rank, date);
-
   return {
     meta,
     rank,
-    date,
-    error
+    date
   }
 }
