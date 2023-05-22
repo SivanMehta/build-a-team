@@ -1,17 +1,18 @@
 import minimist from 'minimist';
-import normalize from './normalize-args.js';
+import normalize from './normalize.js';
 
-function addLead() {}
-function addTeam(){}
+async function populateTeam(){}
+async function populateMovesets(){}
 function formatTeam(){}
 
 async function main(argv) {
   const args = await normalize(argv);
   
-  let team = {};
-  await addLead(team, args);
-  await addTeam(team, args);
-  formatTeam(team);
+  const team = await populateTeam(args);
+  await populateMovesets(team);
+  const output = formatTeam(team);
+
+  console.log(output);
 }
 
 try {

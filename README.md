@@ -1,4 +1,4 @@
-Quick and dirty team generator for [pokemonshowdown.com][1]. Uses [Smogon's published stats](2) to generate a team based on the most used Pokemon in a given metagame.
+Quick and dirty team generator for [pokemonshowdown.com][1].
 
 ## Usage
 
@@ -36,6 +36,12 @@ $ npm start -- --meta gen27ou --date 2027-01 --rank 2500
 
 Could not find stats for 2027-01/gen27ou-2500
 ```
+
+## About
+
+Uses [Smogon's published stats](2) to generate a team based on the most used Pokemon in a given metagame. The stats are published monthly, so the most recent completed month is used by default. The stats are also published by rank, so the rank can be specified as well. 
+
+Right now the current algorithm is most common 6 pokemon in the meta + their most common moveset. This is a pretty naive approach, future implementations will take advantage of the `lead` dataset, and will also take into account the most common teammates for each pokemon.
 
 [1]: https://play.pokemonshowdown.com/
 [2]: https://www.smogon.com/stats/

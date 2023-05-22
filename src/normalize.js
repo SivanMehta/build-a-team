@@ -18,7 +18,7 @@ async function validateMeta(meta, rank, date) {
   const url = `https://www.smogon.com/stats/${metagame}.txt`;
   const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`Could not find stats for metagame ${metagame}`);
+    throw new Error(`Could not find stats for given metagame`);
   }
 }
 
