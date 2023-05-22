@@ -2,7 +2,7 @@ import minimist from 'minimist';
 import normalize from './normalize.js';
 import {
   populateTeam,
-  populateMovesets
+  populateSetups
 } from './steps/index.js'
 
 function formatTeam(team){return team}
@@ -11,7 +11,7 @@ async function main(argv) {
   const args = await normalize(argv);
   
   const team = await populateTeam(args);
-  await populateMovesets(team);
+  await populateSetups(team);
   const output = formatTeam(team);
 
   console.log(output);

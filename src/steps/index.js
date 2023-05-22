@@ -1,7 +1,7 @@
 import populateTeam from './populateTeam.js';
-import populateMovesets from './populateMovesets.js';
+import populateSetups from './populateSetups.js';
 
 export {
   populateTeam,
-  populateMovesets
+  populateSetups
 }
