@@ -1,9 +1,27 @@
-function generateSetups(lines) { 
-  return new Proxy({}, {
-    get: (target, prop) => {
-      return prop;
+const steps = [
+  'name',
+  'usage',
+  'ability',
+  'item',
+  'spread',
+  'moves',
+  'teammates',
+  'checks'
+]
+
+function generateSetups(text) { 
+  const sets = {};
+  const lines = text.split('\n');
+
+  let current = {};
+  const step = 0;
+  for(const line in lines) {
+    const stage = steps[step];
+    if(stage === 'name') {
+      
     }
-  })
+  }
+
 }
 
 export default async function populateSetups(team) {
@@ -15,8 +33,7 @@ export default async function populateSetups(team) {
   }
 
   const text = await res.text();
-  const lines = text.split('\n');
-  const movesets = generateSetups(lines);
+  const movesets = generateSetups(text, names);
 
   team.pokemon = names.map(pokemon => movesets[pokemon]);
 

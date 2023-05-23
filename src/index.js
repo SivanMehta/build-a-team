@@ -9,6 +9,7 @@ function formatTeam(team){return team}
 
 async function main(argv) {
   const args = await normalize(argv);
+  console.log(args)
   
   const team = await populateTeam(args);
   await populateSetups(team);
