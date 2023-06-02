@@ -6,12 +6,12 @@ Quick and dirty team generator for [pokemonshowdown.com][1].
 npm start --meta <metagame> --rank <rank> --date <date>
 ```
 
-- `meta` - The metagame to generate a team for *Optional*
-  - defaults to most recent generation + `ou`
-- `rank` - The rank to generate a team *Optional*
+- `meta` - (*Optional*) The metagame to generate a team for
+  - defaults to most recent generation + `ou` (eg: `gen9ou`)
+- `rank` - (*Optional*) The rank to generate a team
   - defaults to `0`
-- `date` - The date to generate a team for *Optional*
-  - (defaults to the most recent completed month)
+- `date` - (*Optional*) The date to generate a team for
+  - defaults to the most recent completed month
 
 ### Examples
 
