@@ -1,3 +1,15 @@
+const evNames = [
+  "HP", "Atk", "Def", "SpA", "SpD", "Spe"
+];
+
+export function formatEVs(spread) {
+  const evs = spread.split("/");
+  return evs
+    .map((ev, i) => `${ev} ${evNames[i]}`)
+    .filter(ev => !/^0 /.test(ev))
+    .join(" / ");
+}
+
 /**
  * Formats team into given format
 
@@ -19,7 +31,7 @@ export default function formatTeam(team) {
   team.pokemon.forEach(pokemon => {
     output += `${pokemon.name} @ ${pokemon.item}\n`;
     output += `Ability: ${pokemon.ability}\n`;
-    output += `EVs: ${pokemon.spread}\n`;
+    output += `EVs: ${formatEVs(pokemon.spread)}\n`;
     output += `${pokemon.nature} Nature\n`;
     pokemon.moves.forEach(move => {
       output += `- ${move}\n`;

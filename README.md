@@ -21,7 +21,7 @@ Generating a team list for the most recent OU metagame:
 $ npm start
 Great Tusk @ Leftovers
 Ability: Protosynthesis
-EVs: 0/252/0/0/4/252
+EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly Nature
 - Rapid Spin
 - Knock Off
@@ -30,7 +30,7 @@ Jolly Nature
 
 Kingambit @ Leftovers
 Ability: Supreme Overlord
-EVs: 252/252/0/0/4/0
+EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature
 - Sucker Punch
 - Kowtow Cleave
@@ -39,7 +39,7 @@ Adamant Nature
 
 Gholdengo @ Choice Scarf
 Ability: Good as Gold
-EVs: 0/0/0/252/4/252
+EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 - Make It Rain
 - Shadow Ball
@@ -48,7 +48,7 @@ Timid Nature
 
 Iron Valiant @ Booster Energy
 Ability: Quark Drive
-EVs: 0/0/0/252/4/252
+EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 - Moonblast
 - Thunderbolt
@@ -57,7 +57,7 @@ Timid Nature
 
 Dragapult @ Choice Specs
 Ability: Infiltrator
-EVs: 0/0/0/252/4/252
+EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 - U-turn
 - Dragon Darts
@@ -66,7 +66,7 @@ Timid Nature
 
 Corviknight @ Rocky Helmet
 Ability: Pressure
-EVs: 248/0/252/0/8/0
+EVs: 248 HP / 252 Def / 8 SpD
 Impish Nature
 - Roost
 - U-turn
@@ -80,7 +80,7 @@ Generating a team list for a past generation's metagame:
 $ npm start -- --meta ou --date 2017-01 --rank 1500
 Landorus-Therian @ Choice Scarf
 Ability: Intimidate
-EVs: 0/252/0/0/4/252
+EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly Nature
 - Earthquake
 - U-turn
@@ -89,7 +89,7 @@ Jolly Nature
 
 Ferrothorn @ Leftovers
 Ability: Iron Barbs
-EVs: 252/0/88/0/168/0
+EVs: 252 HP / 88 Def / 168 SpD
 Relaxed Nature
 - Leech Seed
 - Gyro Ball
@@ -98,7 +98,7 @@ Relaxed Nature
 
 Garchomp @ Rocky Helmet
 Ability: Rough Skin
-EVs: 0/252/0/0/4/252
+EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly Nature
 - Earthquake
 - Stealth Rock
@@ -107,7 +107,7 @@ Jolly Nature
 
 Gengar @ Life Orb
 Ability: Levitate
-EVs: 0/0/0/252/4/252
+EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 - Shadow Ball
 - Sludge Wave
@@ -116,7 +116,7 @@ Timid Nature
 
 Rotom-Wash @ Leftovers
 Ability: Levitate
-EVs: 248/0/252/0/0/8
+EVs: 248 HP / 252 Def / 8 Spe
 Bold Nature
 - Hydro Pump
 - Volt Switch
@@ -125,7 +125,7 @@ Bold Nature
 
 Clefable @ Leftovers
 Ability: Magic Guard
-EVs: 252/0/172/0/84/0
+EVs: 252 HP / 172 Def / 84 SpD
 Calm Nature
 - Moonblast
 - Soft-Boiled
