@@ -18,7 +18,7 @@ export default function delimitSections(text) {
     // remove whitespace-only lines
     .filter(s => s !== ' \r\n')
     .filter(s => s !== ' \n')
-    .filter(Boolean)
+    .filter(Boolean);
   let current = {};
   for(let i = 0; i < sections.length; i++) {
     const section = sections[i];
