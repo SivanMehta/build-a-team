@@ -9,7 +9,10 @@ export default function cleanup(pokemon) {
   pokemon.name = pokemon.name.split("|")[1].trim();
   pokemon.ability = extractText(extractItem(pokemon.ability));
   pokemon.item = extractText(extractItem(pokemon.item));
-  pokemon.spread = extractText(extractItem(pokemon.spread));
+  const upbringing = extractText(extractItem(pokemon.spread)).split(":")
+  const [ nature, spread ] = upbringing;
+  pokemon.nature = nature;
+  pokemon.spread = spread;
 
   const moves = [];
   for (let i = 0; i < 4; i++) {

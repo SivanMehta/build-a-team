@@ -1,9 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-import { promisify } from 'util';
-const write = promisify(fs.writeFile);
-const read = promisify(fs.readFile);
-
 import delimit from './delimit.js';
 import cleanup from './cleanup.js';
 

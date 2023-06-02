@@ -1,11 +1,10 @@
 import minimist from 'minimist';
-import normalize from './normalize.js';
+import { normalize } from './utils.js';
 import {
   populateTeam,
-  populateSetups
+  populateSetups,
+  formatTeam
 } from './steps/index.js'
-
-function formatTeam(team){return team}
 
 async function main(argv) {
   const args = await normalize(argv);
