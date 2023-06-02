@@ -19,14 +19,118 @@ Generating a team list for the most recent OU metagame:
 
 ```sh
 $ npm start
-# TODO: output
+Great Tusk @ Leftovers
+Ability: Protosynthesis
+EVs: 0/252/0/0/4/252
+Jolly Nature
+- Rapid Spin
+- Knock Off
+- Earthquake
+- Close Combat
+
+Kingambit @ Leftovers
+Ability: Supreme Overlord
+EVs: 252/252/0/0/4/0
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Swords Dance
+
+Gholdengo @ Choice Scarf
+Ability: Good as Gold
+EVs: 0/0/0/252/4/252
+Timid Nature
+- Make It Rain
+- Shadow Ball
+- Recover
+- Nasty Plot
+
+Iron Valiant @ Booster Energy
+Ability: Quark Drive
+EVs: 0/0/0/252/4/252
+Timid Nature
+- Moonblast
+- Thunderbolt
+- Psyshock
+- Close Combat
+
+Dragapult @ Choice Specs
+Ability: Infiltrator
+EVs: 0/0/0/252/4/252
+Timid Nature
+- U-turn
+- Dragon Darts
+- Draco Meteor
+- Shadow Ball
+
+Corviknight @ Rocky Helmet
+Ability: Pressure
+EVs: 248/0/252/0/8/0
+Impish Nature
+- Roost
+- U-turn
+- Defog
+- Brave Bird
 ```
 
 Generating a team list for a past generation's metagame:
   
 ```sh
-$ npm start -- --meta gen7ou --date 2017-01 --rank 1500
-# TODO: output
+$ npm start -- --meta ou --date 2017-01 --rank 1500
+Landorus-Therian @ Choice Scarf
+Ability: Intimidate
+EVs: 0/252/0/0/4/252
+Jolly Nature
+- Earthquake
+- U-turn
+- Stone Edge
+- Knock Off
+
+Ferrothorn @ Leftovers
+Ability: Iron Barbs
+EVs: 252/0/88/0/168/0
+Relaxed Nature
+- Leech Seed
+- Gyro Ball
+- Stealth Rock
+- Protect
+
+Garchomp @ Rocky Helmet
+Ability: Rough Skin
+EVs: 0/252/0/0/4/252
+Jolly Nature
+- Earthquake
+- Stealth Rock
+- Dragon Claw
+- Swords Dance
+
+Gengar @ Life Orb
+Ability: Levitate
+EVs: 0/0/0/252/4/252
+Timid Nature
+- Shadow Ball
+- Sludge Wave
+- Sludge Bomb
+- Focus Blast
+
+Rotom-Wash @ Leftovers
+Ability: Levitate
+EVs: 248/0/252/0/0/8
+Bold Nature
+- Hydro Pump
+- Volt Switch
+- Will-O-Wisp
+- Pain Split
+
+Clefable @ Leftovers
+Ability: Magic Guard
+EVs: 252/0/172/0/84/0
+Calm Nature
+- Moonblast
+- Soft-Boiled
+- Calm Mind
+- Thunder Wave
 ```
 
 Attempting to generate a team list for a metagame that doesn't exist:
